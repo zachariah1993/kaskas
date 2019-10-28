@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=IBM+Plex+Sans|IBM+Plex+Sans+Condensed&display=swap');
+
+body {
+    margin:0;
+    border-top:5px solid white;
+}
+
+header.flex-container {
+    border:1px solid white;
+}
+
+h1,h2,h3,h4,h5,h6 {
+text-transform: uppercase;
+}
+
+nav > ul > li {
+    display: inline;
+    margin-right:25px;
+} 
+
+article {
+    width:600px;
+    margin:25px;
+}
+
+article > header > h1 {
+    font-size:1.8em;
+}
+
+article > header + h2 {
+    margin-top:-25px;
+}
+
+article > header + p {
+    margin-top:60px;
+} 
+
+.body-copy {
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+}
+
+.headline-copy {
+    font-family: 'IBM Plex Sans', sans-serif;
+
+}
+
+code {
+    background-color:black;
+    color:greenyellow;
+    padding:15px;
+    line-height: 42px;
+}
+
+
+section {
+    margin:50px 50px;
+}
+
+.section-title {
+    font-size:2em;
+    border-bottom:1px solid black;
+    width:100%;
+    display:block;
+}
+
+
+.flex-container {
+    display:flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+}
+
+.flex-item {
+    margin-right:auto;
+}
+.color-item {
+    list-style-type: none;
+    display:inline-block;
+    width:200px;
+    height:200px;
+    margin:10px;
+    border:1px solid black;
+}
+
+
+
+
+.color-item-red{
+    background-color:rgb(219, 0, 50);
+} 
+.color-list li:nth-child(1) {
+    color: white
+    letter-spacing: 1px;
+    font-weight:bold;
+    padding:5px; 
+}
+
+.color-list li:nth-child(1):after {
+    content: '#db0032 \a RGB: 219, 0, 50';
+    white-space: pre;
+
+}
+
+.color-item-yellow{
+    background-color:rgb(255, 183, 27);
+} 
+.color-list li:nth-child(2) {
+    color: white
+    letter-spacing: 1px;
+    font-weight:bold;
+    padding:5px; 
+}
+
+.color-list li:nth-child(2):after {
+    content: '#ffb71b \a RGB: 255, 183, 27';
+    white-space: pre;
+
+}
+
+.color-item-blue{
+    background-color:rgb(0, 201, 174);
+} 
+
+.color-list li:nth-child(3) {
+    color: white
+    letter-spacing: 1px;
+    font-weight:bold;
+    padding:5px; 
+}
+
+.color-list li:nth-child(3):after {
+    content: '#00ae8d \a RGB: 0, 174, 141';
+    white-space: pre;
+
+}
+
+.logo-box{
+    position:relative;
+    width:300px;
+    height:50px;
+    padding:10px;
+    background-color:white;
+}
+
+.logo-box:after {
+    position: absolute;
+    left: 281px;
+    top: 0px;
+    content: '';
+    border-bottom: 70px solid white;
+    border-left: 39px solid transparent;
+}
+
+figure {
+    border-bottom:5px solid black;
+    margin:0;
+    
+}
+figure > img.feature {
+   
+    margin-bottom: -5px;
+}
